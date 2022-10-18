@@ -21,7 +21,6 @@ const Login = () => {
   });
   const [passwordType, setpasswordType] = useState("password");
 
-
   let navigateDashboard = useNavigate();
 
   let navigateRegister = useNavigate();
@@ -52,7 +51,7 @@ const Login = () => {
         <div className="row align-items-center">
           <div className="col-2"></div>
           <div className="col-8">
-            <div className="card shadow p-1">
+            <div className="card shadow p-3">
               <div className="card-body">
                 <form onSubmit={handleSubmit(formSubmitHandler)}>
                   <h3 className="">Login</h3>
@@ -107,7 +106,10 @@ const Login = () => {
                     <></>
                   )}
                   <div className="text-end mt-3">
-                    <a className="text-decoration-none"  style={{cursor:"pointer"}}>
+                    <a
+                      className="text-decoration-none"
+                      style={{ cursor: "pointer" }}
+                    >
                       Forgot Password
                     </a>
                   </div>
@@ -124,17 +126,16 @@ const Login = () => {
                   </div>
 
                   <div className="text-center mt-4">
-
                     <span>Don't have an account</span>&nbsp;
                     <a
                       onClick={() => registerForm()}
                       className=""
-                      style={{cursor:"pointer"}}
+                      style={{ cursor: "pointer" }}
                     >
                       create an account
                     </a>
                   </div>
-<hr />
+                  <hr />
                   <div className="container mt-4 text-center">
                     <span style={{ fontSize: "13px" }} className="me-1">
                       {" "}

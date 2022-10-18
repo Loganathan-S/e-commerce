@@ -62,7 +62,7 @@ const Register = () => {
         <div className="row align-items-center min-vh-100">
           <div className="col-2"></div>
           <div className="col-8">
-            <div className="card shadow p-1">
+            <div className="card shadow p-3">
               <div className="card-body">
                 <form
                   className="w-full"
