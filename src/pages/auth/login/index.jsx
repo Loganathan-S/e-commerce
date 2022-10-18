@@ -56,6 +56,7 @@ const Login = () => {
               <div className="card-body">
                 <form onSubmit={handleSubmit(formSubmitHandler)}>
                   <h3 className="">Login</h3>
+                  <h1>Ragu</h1>
                   <div className="form-outline mt-2 position-relative">
                     <div className="position-absolute top-50 start-0 translate-middle-y ">
                       <Icon icon="bxs:user" />
