@@ -149,6 +149,7 @@ const Login = () => {
                       height={25}
                       className="me-1"
                       style={{ cursor: "pointer " }}
+                      
                     />
 
                     <img
