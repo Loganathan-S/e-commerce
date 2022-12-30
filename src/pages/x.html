@@ -1,0 +1,91 @@
+
+
+<div className="container">
+<nav class="navbar navbar-default  justify-content-end top-links">
+      <ul className="d-flex ul-first">
+        <li>
+          <a href="#">Find a Retailer</a>        </li>
+                  <li>
+            <div class="dropdown">
+              <a href="#" id="phone_hours" className="dropdown-toggle" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Need Help?
+              </a>
+              <div class="dropdown-menu" role="menu" aria-labelledby="phone_hours">
+                <h5 className="mx-3">Customer-services</h5>
+                <p className="dropdown-item"><a href="#"> <i className="fa-solid fa-clock"></i> Track My Order</a></p>
+                <p className="dropdown-item"><a href="#"><i class="fas fa-question-circle"></i> Frequently Asked Questions</a></p>
+                <p className="dropdown-item"><a href="#"><i class="fa-solid fa-earth-americas"></i> International Shipping Info</a></p>
+                <p className="dropdown-item"><a href="#"><i class="fa-solid fa-envelope"></i> Send Email</a></p>
+                              </div>
+            </div>
+          </li>
+              </ul>
+    </nav>
+</div>
+<div className="container">
+  <nav className="navbar navbar-default nav-two">
+    <ul className="ul-first">
+      <li>
+    <a href="#"><img className="logo" src={logoImg} alt="" /></a>
+    </li></ul>
+    <ul className="ul-first d-flex">
+      <li>
+        <a href="#"><img className="cart-img mx-3" src={cartImg} alt="" /></a>
+      </li>
+    <li><a href="#"><h5 className="my-4"><i class="fa-solid fa-user-plus"></i> Login</h5></a></li>
+
+    </ul>
+    
+  </nav>
+</div>
+<div className="container">
+  <nav className="navbar navbar-default nav-three">
+    <ul className="ul-first d-flex ul-under">
+    
+      <li>
+      <div className="accordion">
+        <div className="accordion-item">
+        <a href="#">
+          <h5 className="accordion-header">
+          <button className="accordion-button btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-bars" aria-hidden="true"></i> Products
+      </button></h5>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div className="container">
+          <div className="card bg-secondary text-white">
+            <div className="row">
+              <div className="col-md-4">
+                <h4>components</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></a>
+      
+     </div></div> </li>
+      <li>
+      <form action="" className="navbar-form">
+          <div className="input-group ">
+               <input  type="text" className="form-control form-control-search input-search " id="inpt" placeholder="Search Products"/>
+             
+               <div className="input-group-btn">
+                  <button  className="btn  bg-secondary form-control  searchIcon text-white" type="button"> <i className="fa fa-search"></i></button>
+                 </div>
+              </div>
+           </form>
+      </li>
+    </ul>
+    <ul className="ul-first d-flex ul-under">
+<li><button className="btn btn-white btn-nav-sec">TODAY'S DEALS</button></li>
+<li><button className="btn btn-white btn-nav-sec">SPARK <i class="fa-solid fa-square-xmark"></i></button></li>
+<li><button className="btn btn-white btn-nav-sec">
+<i class="fa-solid fa-f"></i>
+<i class="fa-solid fa-o"></i>
+<i class="fa-solid fa-r"></i>
+<i class="fa-regular fa-u"></i>
+<i class="fa-regular fa-m"></i>
+  </button></li>
+    </ul>
+  </nav>
+</div>

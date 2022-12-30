@@ -1,0 +1,140 @@
+/* .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchIcon {
+    color: #fa8100;
+    border: 1px solid #fa8100;
+    background: #000;
+    font-weight: bolder;
+    height: 37px;
+    align-items: center;
+    border-radius: 0%;
+    
+}
+
+.searchIcon:hover{
+    color: rgb(164, 229, 242);
+    border: 1px solid rgb(164, 229, 242);
+
+}
+
+.form-control-search {
+    border: 1px solid #fa8100;
+    background: #000;
+    color:white;
+    font-weight: bolder;
+    line-height: 37px;
+    height: 37px;
+}
+.form-control-search:focus{
+    border: 1px solid rgb(164, 229, 242);
+    background: #000;
+    color:white;
+}
+.fa-search{
+    float: inline-start;
+    margin-right: 4px;
+}
+.input-search{
+   height:37px;
+}
+
+.cart-btn {
+    color: #fa8100;
+    border: 1px solid #fa8100;
+    background: #000;
+    font-weight: bolder;
+    height: 37px;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.cart-btn:hover{
+    color: rgb(164, 229, 242);
+    border: 1px solid rgb(164, 229, 242);
+}
+.navbar-default{
+    background-color: rgb(64, 67, 68);
+}
+.nav-link{
+    margin-left: 210px;
+    display: inline-flex;
+    gap: 25px;
+    list-style-type:none;
+    /* cursor:pointer; */
+
+/* .nav-ulink{
+    list-style-type: none;
+    margin-right: 215px;
+    cursor:pointer;
+    border-width: 2rem;
+}
+
+
+
+.a-tag{
+    text-decoration: none;
+}
+
+
+
+ */ 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Quicksand&family=Solway:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+  font-family: 'ubuntu',sans-serif !important;
+  background-color:white;
+}
+.ul-first{
+    list-style-type: none;
+    /* display:flex; */     
+}
+.a-red{
+    text-decoration: none !important;
+    color: black !important;
+}
+.a-red:hover{
+    color: rgb(230, 48, 48) !important;
+}
+p:hover{
+    color: red !important;
+}
+
+.nav-two{
+    border-bottom: 2px solid red;
+}
+.cart-img{
+    height: 80px;
+    width: 80px;
+}
+.searchIcon{
+    border-radius: 0%;
+    height: 37px;
+    border: 1px solid #313030;
+    border-end-end-radius: 5px ;
+    border-start-end-radius: 5px ;
+}
+.input-search{
+    height: 37px;
+}
+.btn-nav-sec:hover{
+    background-color:  rgb(230, 48, 48) !important;
+    color: white;
+}
+.nav-three{
+    border-bottom: 2px solid rgb(40, 39, 39);
+}
+.btn-sm {
+    height: 37px;
+    width: 195px;
+}
+.title-first{
+    font-size: larger;
+}
+.title-second{
+    font-size: large;
+}

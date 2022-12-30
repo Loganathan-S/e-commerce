@@ -33,6 +33,7 @@ export default function App() {
             />
           </Route>
           <Route index element={<Navigate to={routePath.auth.login} />} />
+
           <Route element={<AppLayout />}>
             <Route
               path={routePath.dashboard}
@@ -43,6 +44,7 @@ export default function App() {
               }
             />
           </Route>
+
         </Routes>
       </BrowserRouter>
     </>

@@ -1,10 +1,12 @@
 import React from 'react'
 // import { useNavigate} from "react-router-dom";
+import Blur from "react-blur"; 
 
 const Dashboard = () => {
     // let navigate = useNavigate();
   return (
     <>
+    <Blur blurRadius={5} enableStyles>
          <div className="container">
                     <div className="row d-flex flex-column min-vh-100 mt-3">
                         <div className="col-12 pb-2 pt-2">
@@ -27,13 +29,13 @@ const Dashboard = () => {
                                     <div className="carousel-item active">
                                         <img
                                             src="https://thumbs.dreamstime.com/b/human-resources-customer-care-pool-employees-labor-union-life-insurance-employment-agency-marketing-segmentation-54111238.jpg"
-                                            className="d-block w-100 h-100"
+                                            className="d-block w-100 h-65"
                                             alt="..."
                                         />
                                         <div className="carousel-caption d-none d-md-block text-dark">
                                             <div className="text-center">
                                                 <label className="Page1_39_modules_20px">
-                                                    Welcome to ScaleHigh
+                                                    Welcome to SunRom
                                                 </label>
                                             </div>
 
@@ -44,6 +46,8 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>    
+
+                </Blur>
          {/* <button onClick={() => navigate('/auth/login')}>Back</button>  */}
     </>
   )
