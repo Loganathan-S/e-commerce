@@ -8,7 +8,7 @@ const Dashboard = () => {
     <>
     <Blur blurRadius={5} enableStyles>
          <div className="container">
-                    <div className="row d-flex flex-column min-vh-100 mt-3">
+                    <div className="row d-flex flex-column min-vh-100 mt-0">
                         <div className="col-12 pb-2 pt-2">
                             <div
                                 id="carouselExampleCaptions"

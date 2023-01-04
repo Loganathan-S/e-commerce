@@ -4,12 +4,17 @@ import logoImg from '../assests/images/if2.png';
 import cartImg from '../assests/images/shopping-cart.jpg';
 import '../pages/header.css';
 import Dashboard from "./dashboard";
-import { Popup } from '@progress/kendo-react-popup';
 import { useEffect } from "react";
 
 
 
 const Header = () => {
+  let updateTime = () =>{
+    var element = '<h1>Hello world now time is </h1>';
+    element +='<p>'+new Date().toLocaleTimeString()+'</p>';
+    document.querySelector('#displayTime').innerHTML = element;
+}
+setInterval(updateTime,1000);
 
   return (
     //     <>
@@ -88,6 +93,7 @@ const Header = () => {
 
     //     </>
     <>
+
       <div className="container">
         <nav className="navbar-default d-flex justify-content-end top-links">
           <div className="col-md-2">
@@ -123,7 +129,7 @@ const Header = () => {
               </div>
               <div className="col-md-2">
                 <li className="ul-first">
-                  <a href="#"><img className="cart-img mx-3" src={cartImg} alt="" /></a>
+                  <a href="#"><img className="cart-img mx-3" src={cartImg} alt="" /> </a>
                 </li>
               </div>
               <div className="col-md-1">
@@ -137,17 +143,17 @@ const Header = () => {
           <div className="row align-items-center" id="accordionExample">
             <div className="row accordion-item">
               <div className="col-md-2 mt-1">
-                <h2 class="accordion-header " id="headingOne">
-                  <button class="btn btn-secondary text-white" style={{paddingLeft:"70px",paddingRight:"70px"}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   Products
+                {/* <h2 class="accordion-header " id="headingOne"> */}
+                  <button class="btn btn-secondary text-white mt-1 "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa fa-bars" aria-hidden="true"></i> Products
                   </button>
-                </h2>
+                {/* </h2> */}
               </div>
 
               <div className="col-md-5">
                 <form action="" className="navbar-form mt-2">
                   <div className="input-group ">
-                    <input type="text" className="form-control form-control-search input-search " id="inpt" placeholder="Search Products" />
+                    <input type="text" className="form-control form-control-search input-search " id="inpt" placeholder="find products,tutorials,etc..." />
 
                     <div className="input-group-btn">
                       <button className="btn  bg-secondary form-control  searchIcon text-white" type="button"> <i className="fa fa-search"></i></button>
@@ -155,9 +161,9 @@ const Header = () => {
                   </div>
                 </form>
               </div>
-              <div className="col-md-5 mt-2">
+              <div className="col-md-5 ">
                 <ul className="ul-first d-flex justify-content-end ul-under">
-                  <li><button className="btn btn-white btn-nav-sec">TODAY'S DEALS</button></li>
+                  <li><button className="btn btn-white btn-nav-sec ">TODAY'S DEALS</button></li>
                   <li><button className="btn btn-white btn-nav-sec">SPARK <i class="fa-solid fa-square-xmark"></i></button></li>
                   <li><button className="btn btn-white btn-nav-sec">
                     <i class="fa-solid fa-f"></i>
@@ -172,8 +178,8 @@ const Header = () => {
               <div className="col-12 border-top">
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <div className="card bg-secondary text-white">
-                      <div className="card-body">
+                    <div className=" bg-secondary text-white">
+                      <div className="p-3">
                         <div className="row">
                           <div className="col-md-3">
                             <h4 class="text-uppercase title-first ">Development</h4>
@@ -183,7 +189,7 @@ const Header = () => {
                           <div className="col-md-5">
                             <h4 class="text-uppercase title-first "><a href="#" className="text-decoration-none text-white">Components</a></h4>
                             <h5 class="text-uppercase title-second"><a href="#" className="text-decoration-none text-white">Passive Components</a></h5>
-                            <h6><a href="#" className="text-decoration-none text-white">Resistors</a></h6>
+                            <h6><a href="#" className="text-decoration-none text-white ">Resistors</a></h6>
                             <h6><a href="#" className="text-decoration-none text-white">Inductors</a></h6>
                             <h6><a href="#" className="text-decoration-none text-white">Capacitors</a></h6>
                             <h5 class="text-uppercase title-second"><a href="#" className="text-decoration-none text-white">microcontrollers</a></h5>
@@ -200,9 +206,14 @@ const Header = () => {
             </div>
           </div>
         </div>
+<div className="row">
+<div className="col-md-8"></div>
+</div>
       </div>
-
-
+<div>
+  <h1>Example of virtual dom</h1>
+  <div id="displayTime"></div>
+</div>
     </>
 
   );
